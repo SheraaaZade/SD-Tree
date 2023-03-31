@@ -111,12 +111,9 @@ public class Trees {
 
     // 1.5)
     public static int depth(Tree n) {
-        int cpt = 0;
-        for (Tree child : n) {
-         //   if (depth(child.getParent()) )
-                cpt++;
-        }
-        return cpt;
+        if (n.getParent() != null)
+            return depth(n.getParent())+1;
+        return 0;
     }
 
     // 1.6)
