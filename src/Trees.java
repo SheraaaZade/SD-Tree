@@ -118,11 +118,18 @@ public class Trees {
 
     // 1.6)
     public static boolean sameOne(Tree n1, Tree n2) {
-        return true;
+        if(n1.getParent() != null ){
+            return sameOne(n1.getParent(),n2);
+        }
+        if(n2.getParent() != null){
+            return sameOne(n1, n2.getParent());
+        }
+        return n1 == n2;
     }
 
     // 1.7)
     public static void dfsPrint(Tree t) {
+
     }
 
     // 1.8)

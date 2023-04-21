@@ -40,5 +40,8 @@ public class Main {
 
         System.out.println("\n---Depth---");
         System.out.println(Trees.depth(t4));
+
+        System.out.println("\n---SameOne---");
+        System.out.println(Trees.sameOne(t2,t6));
     }
 }
